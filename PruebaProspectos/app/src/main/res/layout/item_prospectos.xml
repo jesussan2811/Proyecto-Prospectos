@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <TextView
+        android:id="@+id/txtNombre"
+        android:layout_width="70dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="15dp"
+        android:textColor="@color/purple_500"
+        tools:text="Nombre:"
+        android:text="Nombre:"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/tvNombre"
+        android:layout_width="70dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="20dp"
+        tools:text="Jesus"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@id/txtNombre"/>
+
+    <TextView
+        android:id="@+id/txtApellidoPat"
+        android:layout_width="70dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="15dp"
+        android:textColor="@color/purple_500"
+        tools:text="Apellido Paterno:"
+        android:text="Nombre:"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@id/tvNombre"/>
+
+    <TextView
+        android:id="@+id/tvApellidoPat"
+        android:layout_width="70dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="20dp"
+        tools:text="Sanchez"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@id/txtApellidoPat"/>
+
+    <TextView
+        android:id="@+id/txtApellidoMat"
+        android:layout_width="70dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="15dp"
+        android:textColor="@color/purple_500"
+        tools:text="Apellido Materno:"
+        android:text="Apellido Materno:"
+        app:layout_constraintTop_toBottomOf="@id/txtNombre"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/tvApellidoMat"
+        android:layout_width="70dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="20dp"
+        tools:text="Guzman"
+        app:layout_constraintTop_toBottomOf="@id/tvNombre"
+        app:layout_constraintStart_toEndOf="@id/txtApellidoMat"/>
+
+    <TextView
+        android:id="@+id/txtEstatus"
+        android:layout_width="70dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="15dp"
+        android:textColor="@color/purple_500"
+        tools:text="Estatus:"
+        android:text="Estatus:"
+        app:layout_constraintTop_toBottomOf="@id/txtApellidoPat"
+        app:layout_constraintStart_toEndOf="@id/tvApellidoMat"/>
+
+    <TextView
+        android:id="@+id/tvEstatus"
+        android:layout_width="70dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="20dp"
+        tools:text="Enviado"
+        app:layout_constraintTop_toBottomOf="@id/tvApellidoPat"
+        app:layout_constraintStart_toEndOf="@id/txtEstatus"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
